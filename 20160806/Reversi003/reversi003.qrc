@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Reversi003_ja.qm</file>
+    </qresource>
+</RCC>
