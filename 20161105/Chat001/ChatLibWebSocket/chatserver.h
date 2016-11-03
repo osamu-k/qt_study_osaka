@@ -10,7 +10,7 @@ class ChatServer : public QObject
 {
     Q_OBJECT
 public:
-    static ChatServer *ChatServer::instance();
+    static ChatServer *instance();
 
     void listen(const QHostAddress &address = QHostAddress::Any, quint16 port = 0);
     void close();

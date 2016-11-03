@@ -35,7 +35,7 @@ void ChatServer::close()
 
 void ChatServer::serverAcceptError(QAbstractSocket::SocketError socketError)
 {
-    qDebug() << "accept error: " + socketError;
+    qDebug() << "accept error: " << socketError;
 }
 
 void ChatServer::serverNewConnection()
