@@ -35,18 +35,17 @@ Window {
                     id: textInput
                     Layout.fillWidth: true
                     height: parent.height * 0.3
-                    text: "Hello World!"
                 }
             }
             RowLayout{
                 spacing: 5
                 Button{
-                    text: "Connect"
+                    text: qsTr("Connect")
                     onClicked: {
                         chatClient.connectToHost(inputHost.text,inputPort.text)                  }
                 }
                 Button{
-                    text: "Disconnect"
+                    text: qsTr("Disconnect")
                     onClicked:{
                         chatClient.disconnectFromHost()
                     }
@@ -55,13 +54,13 @@ Window {
                     Layout.fillWidth: true
                 }
                 Button{
-                    text: "Clear"
+                    text: qsTr("Clear")
                     onClicked: {
                         textInput.text = ""
                     }
                 }
                 Button{
-                    text: "Send"
+                    text: qsTr("Send")
                     onClicked: {
                         chatClient.send(textInput.text)
                         textInput.text = ""
@@ -72,7 +71,7 @@ Window {
                 Layout.fillHeight: false
                 spacing: 5
                 Text{
-                    text: "host"
+                    text: qsTr("host")
                 }
                 MyTextInput{
                     id: inputHost
@@ -80,7 +79,7 @@ Window {
                     text: "localhost"
                 }
                 Text{
-                    text: "port"
+                    text: qsTr("port")
                 }
                 MyTextInput{
                     id: inputPort

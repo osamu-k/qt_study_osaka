@@ -8,6 +8,7 @@
 MainWidget::MainWidget(QWidget *parent)
     : QWidget(parent)
     , m_textLog(nullptr)
+    , m_editPort(nullptr)
     , m_chatServer(nullptr)
 {
     m_textLog = new QTextEdit;
