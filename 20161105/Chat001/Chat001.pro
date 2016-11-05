@@ -6,3 +6,4 @@ SUBDIRS += \
     ChatServerCpp \
     ChatClientCpp \
     ChatClientQML \
+    WebSocketTest
