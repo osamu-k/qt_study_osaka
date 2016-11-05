@@ -91,4 +91,6 @@ void MainWidget::socketError(QAbstractSocket::SocketError socketError)
 void MainWidget::socketTextMessageReceived(const QString &message)
 {
     qDebug() << "websocket text message received: " << message;
+    m_editLog->append(message);
+    m_editLog->clear();
 }
