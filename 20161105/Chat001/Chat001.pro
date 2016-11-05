@@ -1,8 +1,8 @@
 TEMPLATE = subdirs
 
 SUBDIRS += \
-    ChatClientCpp \
     ChatLib \
+    ChatLibWebSocket \
     ChatServerCpp \
+    ChatClientCpp \
     ChatClientQML \
-    ChatLibWebSocket
